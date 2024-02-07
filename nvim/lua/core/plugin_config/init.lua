@@ -1,0 +1,7 @@
+require("core.plugin_config.lualine")
+require("core.plugin_config.mason")
+require("core.plugin_config.nvim-tree")
+require("core.plugin_config.rust-tools")
+require("core.plugin_config.cmp-opts")
+require("core.plugin_config.cmp")
+require("core.plugin_config.vim-floaterm")

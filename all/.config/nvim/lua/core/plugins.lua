@@ -14,13 +14,14 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   -- use { 'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
-  use ({ 'projekt0n/github-nvim-theme',
-    config = function()
-      require('github-theme').setup({
-        -- ... 
-      })
-    end
-  }) 
+  use { "catppuccin/nvim", as = "catppuccin" }
+  -- use ({ 'projekt0n/github-nvim-theme',
+  --   config = function()
+  --     require('github-theme').setup({
+  --       -- ... 
+  --     })
+  --   end
+  -- }) 
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   -- use 'ellisonleao/gruvbox.nvim'
@@ -56,5 +57,5 @@ return require('packer').startup(function(use)
 
   vim.cmd('set number');
   vim.cmd('set relativenumber');
-  vim.cmd('colorscheme github_dark_default');
+  vim.cmd('colorscheme catppuccin-mocha');
 end)

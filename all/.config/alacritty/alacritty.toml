@@ -1,0 +1,20 @@
+general.import = [
+  "/home/adarshm26/.config/alacritty/catppuccin-mocah.toml"
+]
+
+[window]
+dimensions.columns = 100
+dimensions.lines = 25
+
+[font]
+normal.family = "JetBrainsMonoNL Nerd Font Mono"
+size = 11
+
+[env]
+TERM = "xterm-256color"
+
+live_config_reload = "true"
+
+[keyboard]
+bindings = [{ key = "Return", mods = "Super|Shift", action = "SpawnNewInstance" }]
+

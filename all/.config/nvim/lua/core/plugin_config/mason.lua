@@ -18,3 +18,6 @@ require("lspconfig")["pyright"].setup {
 require("lspconfig")["jdtls"].setup {
   capabilities = capabilities
 }
+require("lspconfig")["clangd"].setup{
+  capabilities = capabilities
+}

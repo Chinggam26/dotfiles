@@ -22,6 +22,10 @@ return require('packer').startup(function(use)
   --     })
   --   end
   -- }) 
+  use {
+    'junegunn/fzf.vim',
+    requires = { 'junegunn/fzf', run = ':call fzf#install()' }
+  }
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   -- use 'ellisonleao/gruvbox.nvim'
